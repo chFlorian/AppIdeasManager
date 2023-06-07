@@ -27,6 +27,14 @@ struct EditAppIdeaView: View {
         
         ForEach(idea.features) { feature in
           Text(feature.detailedDescription)
+            .contextMenu {
+              Button("Delete", role: .destructive) {
+                if let index = idea.features.firstIndex(of: feature) {
+                  idea.features.remove(at: index)
+                  modelContext.delete(feature)
+                }
+              }
+            }
         }
       }
     }
