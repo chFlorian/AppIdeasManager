@@ -5,11 +5,11 @@ import SwiftData
 
 @main
 struct AppIdeasManagerApp: App {
-
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
-        .modelContainer(for: Item.self)
+  
+  var body: some Scene {
+    WindowGroup {
+      ContentView()
     }
+    .modelContainer(for: AppIdea.self)
+  }
 }
