@@ -4,52 +4,59 @@ import SwiftUI
 import SwiftData
 
 struct ContentView: View {
-    @Environment(\.modelContext) private var modelContext
-    @Query private var items: [Item]
-    
-    var body: some View {
-        NavigationView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
-                    } label: {
-                        Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
-                    }
-                }
-                .onDelete(perform: deleteItems)
-            }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }
-                }
-            }
-            Text("Select an item")
+  @Environment(\.modelContext) private var modelContext
+  @Query var ideas: [AppIdea]
+  
+  @State private var showAddDialog = false
+  @State private var newName = ""
+  @State private var newDescription = ""
+  
+  var body: some View {
+    NavigationStack {
+      List(ideas) { idea in
+        NavigationLink(value: idea) {
+          VStack(alignment: .leading) {
+            Text(idea.name)
+            
+            Text(idea.detailedDescription)
+              .textScale(.secondary)
+              .foregroundStyle(.secondary)
+          }
         }
-    }
-
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(timestamp: Date())
-            modelContext.insert(newItem)
+      }
+      .navigationTitle("App Ideas")
+      .navigationDestination(for: AppIdea.self) { EditAppIdeaView(idea: $0) }
+      .toolbar {
+        Button("Add") {
+          showAddDialog.toggle()
         }
-    }
-
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            for index in offsets {
-                modelContext.delete(items[index])
+      }
+      .sheet(isPresented: $showAddDialog) {
+        NavigationStack {
+          Form {
+            TextField("Name", text: $newName)
+            TextField("Description", text: $newDescription, axis: .vertical)
+          }
+          .navigationTitle("New App Idea")
+          .toolbar {
+            Button("Dismiss") {
+              showAddDialog.toggle()
             }
+            
+            Button("Save") {
+              let idea = AppIdea(name: newName, detailedDescription: newDescription)
+              modelContext.insert(idea)
+              showAddDialog.toggle()
+            }
+          }
         }
+        .presentationDetents([.medium])
+      }
     }
+  }
 }
 
 #Preview {
-    ContentView()
-        .modelContainer(for: Item.self, inMemory: true)
+  ContentView()
+    .modelContainer(for: [AppIdea.self, AppFeature.self], inMemory: true)
 }

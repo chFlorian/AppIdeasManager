@@ -10,6 +10,6 @@ struct AppIdeasManagerApp: App {
         WindowGroup {
             ContentView()
         }
-        .modelContainer(for: Item.self)
+        .modelContainer(for: [AppIdea.self, AppFeature.self])
     }
 }
