@@ -5,7 +5,13 @@ import SwiftData
 
 struct ContentView: View {
   @Environment(\.modelContext) private var modelContext
-  @Query var ideas: [AppIdea]
+  @Query(
+    filter: #Predicate {
+      $0.isArchived == false
+    },
+    sort: \.creationDate,
+    order: .reverse
+  ) var ideas: [AppIdea]
   
   @State private var showAddDialog = false
   @State private var newName = ""
@@ -13,14 +19,16 @@ struct ContentView: View {
   
   var body: some View {
     NavigationStack {
-      List(ideas) { idea in
-        NavigationLink(value: idea) {
-          VStack(alignment: .leading) {
-            Text(idea.name)
-            
-            Text(idea.detailedDescription)
-              .textScale(.secondary)
-              .foregroundStyle(.secondary)
+      Group {
+        if ideas.isEmpty {
+          ContentUnavailableView(
+            "No App Ideas",
+            systemImage: "square.stack.3d.up.slash",
+            description: Text("Add an app idea to get started.")
+          )
+        } else {
+          List(ideas) {
+            AppIdeasListRow(idea: $0)
           }
         }
       }

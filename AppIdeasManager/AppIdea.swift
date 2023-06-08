@@ -8,11 +8,13 @@ class AppIdea {
   @Attribute(.unique) var name: String
   var detailedDescription: String
   var creationDate: Date
+  var isArchived: Bool = false
   
   init(name: String, detailedDescription: String) {
     self.name = name
     self.detailedDescription = detailedDescription
     self.creationDate = .now
+    self.isArchived = false
   }
   
   @Relationship(.cascade)
