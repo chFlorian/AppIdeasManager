@@ -14,6 +14,7 @@
 		5C8043E62A310A2300775148 /* AppIdea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8043E52A310A2300775148 /* AppIdea.swift */; };
 		5C8043E82A310A9800775148 /* AppFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8043E72A310A9800775148 /* AppFeature.swift */; };
 		5C8043EA2A310CE400775148 /* EditAppIdeaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8043E92A310CE400775148 /* EditAppIdeaView.swift */; };
+		5CAF7F7C2A3371F200F71A8A /* AppIdeasListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAF7F7B2A3371F200F71A8A /* AppIdeasListRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		5C8043E52A310A2300775148 /* AppIdea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIdea.swift; sourceTree = "<group>"; };
 		5C8043E72A310A9800775148 /* AppFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFeature.swift; sourceTree = "<group>"; };
 		5C8043E92A310CE400775148 /* EditAppIdeaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAppIdeaView.swift; sourceTree = "<group>"; };
+		5CAF7F7B2A3371F200F71A8A /* AppIdeasListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIdeasListRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			children = (
 				5C8043CE2A30D16200775148 /* AppIdeasManagerApp.swift */,
 				5C8043D02A30D16200775148 /* ContentView.swift */,
+				5CAF7F7B2A3371F200F71A8A /* AppIdeasListRow.swift */,
 				5C8043E92A310CE400775148 /* EditAppIdeaView.swift */,
 				5C8043E52A310A2300775148 /* AppIdea.swift */,
 				5C8043E72A310A9800775148 /* AppFeature.swift */,
@@ -151,6 +154,7 @@
 				5C8043CF2A30D16200775148 /* AppIdeasManagerApp.swift in Sources */,
 				5C8043E62A310A2300775148 /* AppIdea.swift in Sources */,
 				5C8043EA2A310CE400775148 /* EditAppIdeaView.swift in Sources */,
+				5CAF7F7C2A3371F200F71A8A /* AppIdeasListRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
