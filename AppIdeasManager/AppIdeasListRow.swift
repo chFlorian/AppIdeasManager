@@ -16,13 +16,22 @@ struct AppIdeasListRow: View {
           .foregroundStyle(.secondary)
       }
     }
-    .swipeActions {
+    .swipeActions(edge: .trailing, allowsFullSwipe: false) {
       Button(role: .destructive) {
         idea.isArchived = true
       } label: {
         Label("Archive", systemImage: "archivebox")
       }
     }
+    .swipeActions(edge: .leading, allowsFullSwipe: true) {
+      Button {
+        idea.isFavorite.toggle()
+      } label: {
+        Label("Toggle Favorite", systemImage: idea.isFavorite ? "star.slash" : "star")
+      }
+      .tint(.yellow)
+    }
     .sensoryFeedback(.decrease, trigger: idea.isArchived)
+    .sensoryFeedback(.increase, trigger: idea.isFavorite)
   }
 }

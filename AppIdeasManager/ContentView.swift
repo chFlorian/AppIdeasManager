@@ -17,6 +17,14 @@ struct ContentView: View {
   @State private var newName = ""
   @State private var newDescription = ""
   
+  var favoriteIdeas: [AppIdea] {
+    ideas.filter { $0.isFavorite }.sorted(by: { $0.name < $1.name })
+  }
+  
+  var regularIdeas: [AppIdea] {
+    ideas.filter { $0.isFavorite == false }.sorted(by: { $0.name < $1.name })
+  }
+  
   var body: some View {
     NavigationStack {
       Group {
@@ -27,8 +35,18 @@ struct ContentView: View {
             description: Text("Tap add to create your first app idea.")
           )
         } else {
-          List(ideas) {
-            AppIdeasListRow(idea: $0)
+          List {
+            Section("Favorites") {
+              ForEach(favoriteIdeas) {
+                AppIdeasListRow(idea: $0)
+              }
+            }
+            
+            Section {
+              ForEach(regularIdeas) {
+                AppIdeasListRow(idea: $0)
+              }
+            }
           }
         }
       }

@@ -15,7 +15,63 @@
 		5C8043E82A310A9800775148 /* AppFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8043E72A310A9800775148 /* AppFeature.swift */; };
 		5C8043EA2A310CE400775148 /* EditAppIdeaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8043E92A310CE400775148 /* EditAppIdeaView.swift */; };
 		5CAF7F7C2A3371F200F71A8A /* AppIdeasListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAF7F7B2A3371F200F71A8A /* AppIdeasListRow.swift */; };
+		5CAF7F842A34388C00F71A8A /* AppIdea_IntentsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAF7F832A34388C00F71A8A /* AppIdea_IntentsExtension.swift */; };
+		5CAF7F862A34388C00F71A8A /* AppIdea_Intents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAF7F852A34388C00F71A8A /* AppIdea_Intents.swift */; };
+		5CAF7F8A2A34388C00F71A8A /* AppIdea Intents.appex in Embed ExtensionKit Extensions */ = {isa = PBXBuildFile; fileRef = 5CAF7F812A34388C00F71A8A /* AppIdea Intents.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5CAF7F8F2A3438C500F71A8A /* AppIdea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8043E52A310A2300775148 /* AppIdea.swift */; };
+		5CAF7F902A3438C700F71A8A /* AppFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8043E72A310A9800775148 /* AppFeature.swift */; };
+		5CAF7F982A34D00D00F71A8A /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CAF7F972A34D00D00F71A8A /* WidgetKit.framework */; };
+		5CAF7F9A2A34D00D00F71A8A /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CAF7F992A34D00D00F71A8A /* SwiftUI.framework */; };
+		5CAF7F9D2A34D00D00F71A8A /* AppIdea_WIdgetsBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAF7F9C2A34D00D00F71A8A /* AppIdea_WIdgetsBundle.swift */; };
+		5CAF7F9F2A34D00D00F71A8A /* AppIdea_WIdgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAF7F9E2A34D00D00F71A8A /* AppIdea_WIdgets.swift */; };
+		5CAF7FA12A34D00E00F71A8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CAF7FA02A34D00E00F71A8A /* Assets.xcassets */; };
+		5CAF7FA52A34D00E00F71A8A /* AppIdea WIdgetsExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 5CAF7F952A34D00D00F71A8A /* AppIdea WIdgetsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5CAF7FAA2A34D01700F71A8A /* AppIdea_Intents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAF7F852A34388C00F71A8A /* AppIdea_Intents.swift */; };
+		5CAF7FAB2A34D03E00F71A8A /* AppFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8043E72A310A9800775148 /* AppFeature.swift */; };
+		5CAF7FAC2A34D03E00F71A8A /* AppIdea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8043E52A310A2300775148 /* AppIdea.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5CAF7F882A34388C00F71A8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5C8043C32A30D16200775148 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5CAF7F802A34388C00F71A8A;
+			remoteInfo = "AppIdea Intents";
+		};
+		5CAF7FA32A34D00E00F71A8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5C8043C32A30D16200775148 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5CAF7F942A34D00D00F71A8A;
+			remoteInfo = "AppIdea WIdgetsExtension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5CAF7F8E2A34388C00F71A8A /* Embed ExtensionKit Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(EXTENSIONS_FOLDER_PATH)";
+			dstSubfolderSpec = 16;
+			files = (
+				5CAF7F8A2A34388C00F71A8A /* AppIdea Intents.appex in Embed ExtensionKit Extensions */,
+			);
+			name = "Embed ExtensionKit Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CAF7FA92A34D00E00F71A8A /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5CAF7FA52A34D00E00F71A8A /* AppIdea WIdgetsExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5C8043CB2A30D16200775148 /* AppIdeasManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppIdeasManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -27,6 +83,19 @@
 		5C8043E72A310A9800775148 /* AppFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFeature.swift; sourceTree = "<group>"; };
 		5C8043E92A310CE400775148 /* EditAppIdeaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAppIdeaView.swift; sourceTree = "<group>"; };
 		5CAF7F7B2A3371F200F71A8A /* AppIdeasListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIdeasListRow.swift; sourceTree = "<group>"; };
+		5CAF7F812A34388C00F71A8A /* AppIdea Intents.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.extensionkit-extension"; includeInIndex = 0; path = "AppIdea Intents.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CAF7F832A34388C00F71A8A /* AppIdea_IntentsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIdea_IntentsExtension.swift; sourceTree = "<group>"; };
+		5CAF7F852A34388C00F71A8A /* AppIdea_Intents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIdea_Intents.swift; sourceTree = "<group>"; };
+		5CAF7F872A34388C00F71A8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CAF7F952A34D00D00F71A8A /* AppIdea WIdgetsExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "AppIdea WIdgetsExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CAF7F972A34D00D00F71A8A /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		5CAF7F992A34D00D00F71A8A /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		5CAF7F9C2A34D00D00F71A8A /* AppIdea_WIdgetsBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIdea_WIdgetsBundle.swift; sourceTree = "<group>"; };
+		5CAF7F9E2A34D00D00F71A8A /* AppIdea_WIdgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIdea_WIdgets.swift; sourceTree = "<group>"; };
+		5CAF7FA02A34D00E00F71A8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5CAF7FA22A34D00E00F71A8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CAF7FAD2A34D13A00F71A8A /* AppIdeasManager.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AppIdeasManager.entitlements; sourceTree = "<group>"; };
+		5CAF7FAE2A34D15500F71A8A /* AppIdea WIdgetsExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "AppIdea WIdgetsExtension.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,13 +106,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5CAF7F7E2A34388C00F71A8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CAF7F922A34D00D00F71A8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CAF7F9A2A34D00D00F71A8A /* SwiftUI.framework in Frameworks */,
+				5CAF7F982A34D00D00F71A8A /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		5C8043C22A30D16200775148 = {
 			isa = PBXGroup;
 			children = (
+				5CAF7FAE2A34D15500F71A8A /* AppIdea WIdgetsExtension.entitlements */,
 				5C8043CD2A30D16200775148 /* AppIdeasManager */,
+				5CAF7F822A34388C00F71A8A /* AppIdea Intents */,
+				5CAF7F9B2A34D00D00F71A8A /* AppIdea WIdgets */,
+				5CAF7F962A34D00D00F71A8A /* Frameworks */,
 				5C8043CC2A30D16200775148 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,6 +141,8 @@
 			isa = PBXGroup;
 			children = (
 				5C8043CB2A30D16200775148 /* AppIdeasManager.app */,
+				5CAF7F812A34388C00F71A8A /* AppIdea Intents.appex */,
+				5CAF7F952A34D00D00F71A8A /* AppIdea WIdgetsExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -59,6 +150,7 @@
 		5C8043CD2A30D16200775148 /* AppIdeasManager */ = {
 			isa = PBXGroup;
 			children = (
+				5CAF7FAD2A34D13A00F71A8A /* AppIdeasManager.entitlements */,
 				5C8043CE2A30D16200775148 /* AppIdeasManagerApp.swift */,
 				5C8043D02A30D16200775148 /* ContentView.swift */,
 				5CAF7F7B2A3371F200F71A8A /* AppIdeasListRow.swift */,
@@ -79,6 +171,36 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		5CAF7F822A34388C00F71A8A /* AppIdea Intents */ = {
+			isa = PBXGroup;
+			children = (
+				5CAF7F832A34388C00F71A8A /* AppIdea_IntentsExtension.swift */,
+				5CAF7F852A34388C00F71A8A /* AppIdea_Intents.swift */,
+				5CAF7F872A34388C00F71A8A /* Info.plist */,
+			);
+			path = "AppIdea Intents";
+			sourceTree = "<group>";
+		};
+		5CAF7F962A34D00D00F71A8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5CAF7F972A34D00D00F71A8A /* WidgetKit.framework */,
+				5CAF7F992A34D00D00F71A8A /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5CAF7F9B2A34D00D00F71A8A /* AppIdea WIdgets */ = {
+			isa = PBXGroup;
+			children = (
+				5CAF7F9C2A34D00D00F71A8A /* AppIdea_WIdgetsBundle.swift */,
+				5CAF7F9E2A34D00D00F71A8A /* AppIdea_WIdgets.swift */,
+				5CAF7FA02A34D00E00F71A8A /* Assets.xcassets */,
+				5CAF7FA22A34D00E00F71A8A /* Info.plist */,
+			);
+			path = "AppIdea WIdgets";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -89,15 +211,53 @@
 				5C8043C72A30D16200775148 /* Sources */,
 				5C8043C82A30D16200775148 /* Frameworks */,
 				5C8043C92A30D16200775148 /* Resources */,
+				5CAF7F8E2A34388C00F71A8A /* Embed ExtensionKit Extensions */,
+				5CAF7FA92A34D00E00F71A8A /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5CAF7F892A34388C00F71A8A /* PBXTargetDependency */,
+				5CAF7FA42A34D00E00F71A8A /* PBXTargetDependency */,
 			);
 			name = AppIdeasManager;
 			productName = AppIdeasManager;
 			productReference = 5C8043CB2A30D16200775148 /* AppIdeasManager.app */;
 			productType = "com.apple.product-type.application";
+		};
+		5CAF7F802A34388C00F71A8A /* AppIdea Intents */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CAF7F8B2A34388C00F71A8A /* Build configuration list for PBXNativeTarget "AppIdea Intents" */;
+			buildPhases = (
+				5CAF7F7D2A34388C00F71A8A /* Sources */,
+				5CAF7F7E2A34388C00F71A8A /* Frameworks */,
+				5CAF7F7F2A34388C00F71A8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AppIdea Intents";
+			productName = "AppIdea Intents";
+			productReference = 5CAF7F812A34388C00F71A8A /* AppIdea Intents.appex */;
+			productType = "com.apple.product-type.extensionkit-extension";
+		};
+		5CAF7F942A34D00D00F71A8A /* AppIdea WIdgetsExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CAF7FA62A34D00E00F71A8A /* Build configuration list for PBXNativeTarget "AppIdea WIdgetsExtension" */;
+			buildPhases = (
+				5CAF7F912A34D00D00F71A8A /* Sources */,
+				5CAF7F922A34D00D00F71A8A /* Frameworks */,
+				5CAF7F932A34D00D00F71A8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AppIdea WIdgetsExtension";
+			productName = "AppIdea WIdgetsExtension";
+			productReference = 5CAF7F952A34D00D00F71A8A /* AppIdea WIdgetsExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -110,6 +270,12 @@
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					5C8043CA2A30D16200775148 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					5CAF7F802A34388C00F71A8A = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					5CAF7F942A34D00D00F71A8A = {
 						CreatedOnToolsVersion = 15.0;
 					};
 				};
@@ -128,6 +294,8 @@
 			projectRoot = "";
 			targets = (
 				5C8043CA2A30D16200775148 /* AppIdeasManager */,
+				5CAF7F802A34388C00F71A8A /* AppIdea Intents */,
+				5CAF7F942A34D00D00F71A8A /* AppIdea WIdgetsExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -139,6 +307,21 @@
 			files = (
 				5C8043D62A30D16300775148 /* Preview Assets.xcassets in Resources */,
 				5C8043D32A30D16300775148 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CAF7F7F2A34388C00F71A8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CAF7F932A34D00D00F71A8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CAF7FA12A34D00E00F71A8A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,7 +341,43 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5CAF7F7D2A34388C00F71A8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CAF7F902A3438C700F71A8A /* AppFeature.swift in Sources */,
+				5CAF7F862A34388C00F71A8A /* AppIdea_Intents.swift in Sources */,
+				5CAF7F842A34388C00F71A8A /* AppIdea_IntentsExtension.swift in Sources */,
+				5CAF7F8F2A3438C500F71A8A /* AppIdea.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CAF7F912A34D00D00F71A8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CAF7FAB2A34D03E00F71A8A /* AppFeature.swift in Sources */,
+				5CAF7FAA2A34D01700F71A8A /* AppIdea_Intents.swift in Sources */,
+				5CAF7F9F2A34D00D00F71A8A /* AppIdea_WIdgets.swift in Sources */,
+				5CAF7F9D2A34D00D00F71A8A /* AppIdea_WIdgetsBundle.swift in Sources */,
+				5CAF7FAC2A34D03E00F71A8A /* AppIdea.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5CAF7F892A34388C00F71A8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5CAF7F802A34388C00F71A8A /* AppIdea Intents */;
+			targetProxy = 5CAF7F882A34388C00F71A8A /* PBXContainerItemProxy */;
+		};
+		5CAF7FA42A34D00E00F71A8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5CAF7F942A34D00D00F71A8A /* AppIdea WIdgetsExtension */;
+			targetProxy = 5CAF7FA32A34D00E00F71A8A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		5C8043D92A30D16300775148 /* Debug */ = {
@@ -283,8 +502,10 @@
 		5C8043DC2A30D16300775148 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AppIdeasManager/AppIdeasManager.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AppIdeasManager/Preview Content\"";
@@ -312,8 +533,10 @@
 		5C8043DD2A30D16300775148 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AppIdeasManager/AppIdeasManager.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AppIdeasManager/Preview Content\"";
@@ -338,6 +561,112 @@
 			};
 			name = Release;
 		};
+		5CAF7F8C2A34388C00F71A8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6YDE2UY2S5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "AppIdea Intents/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "AppIdea Intents";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.flowritesco.AppIdeasManager.AppIdea-Intents";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5CAF7F8D2A34388C00F71A8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6YDE2UY2S5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "AppIdea Intents/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "AppIdea Intents";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.flowritesco.AppIdeasManager.AppIdea-Intents";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5CAF7FA72A34D00E00F71A8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = "AppIdea WIdgetsExtension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6YDE2UY2S5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "AppIdea WIdgets/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "AppIdea WIdgets";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.flowritesco.AppIdeasManager.AppIdea-WIdgets";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5CAF7FA82A34D00E00F71A8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = "AppIdea WIdgetsExtension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6YDE2UY2S5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "AppIdea WIdgets/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "AppIdea WIdgets";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.flowritesco.AppIdeasManager.AppIdea-WIdgets";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -355,6 +684,24 @@
 			buildConfigurations = (
 				5C8043DC2A30D16300775148 /* Debug */,
 				5C8043DD2A30D16300775148 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CAF7F8B2A34388C00F71A8A /* Build configuration list for PBXNativeTarget "AppIdea Intents" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CAF7F8C2A34388C00F71A8A /* Debug */,
+				5CAF7F8D2A34388C00F71A8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CAF7FA62A34D00E00F71A8A /* Build configuration list for PBXNativeTarget "AppIdea WIdgetsExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CAF7FA72A34D00E00F71A8A /* Debug */,
+				5CAF7FA82A34D00E00F71A8A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

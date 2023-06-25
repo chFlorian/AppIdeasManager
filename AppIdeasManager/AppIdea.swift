@@ -9,12 +9,14 @@ class AppIdea {
   var detailedDescription: String
   var creationDate: Date
   var isArchived: Bool = false
+  var isFavorite: Bool = false
   
-  init(name: String, detailedDescription: String, isArchived: Bool = false) {
+  init(name: String, detailedDescription: String, isArchived: Bool = false, isFavorite: Bool = false) {
     self.name = name
     self.detailedDescription = detailedDescription
     self.creationDate = .now
     self.isArchived = isArchived
+    self.isFavorite = isFavorite
   }
   
   @Relationship(.cascade)

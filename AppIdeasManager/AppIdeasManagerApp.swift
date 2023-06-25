@@ -4,12 +4,11 @@ import SwiftUI
 import SwiftData
 
 @main
-struct AppIdeasManagerApp: App {
-
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
-        .modelContainer(for: [AppIdea.self, AppFeature.self])
+struct AppIdeasManagerApp: App {  
+  var body: some Scene {
+    WindowGroup {
+      ContentView()
     }
+    .modelContainer(for: AppIdea.self)
+  }
 }
