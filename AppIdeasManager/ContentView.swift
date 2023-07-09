@@ -13,6 +13,14 @@ struct ContentView: View {
     order: .reverse
   ) var ideas: [AppIdea]
   
+  var favoriteIdeas: [AppIdea] {
+    ideas.filter { $0.isFavorite }
+  }
+  
+  var nonFavoriteIdeas: [AppIdea] {
+    ideas.filter { $0.isFavorite == false }
+  }
+  
   @State private var showAddDialog = false
   @State private var newName = ""
   @State private var newDescription = ""
@@ -27,8 +35,17 @@ struct ContentView: View {
             description: Text("Tap add to create your first app idea.")
           )
         } else {
-          List(ideas) {
-            AppIdeasListRow(idea: $0)
+          List {
+            Section("Favorites") {
+              ForEach(favoriteIdeas) {
+                AppIdeasListRow(idea: $0)
+              }
+            }
+            Section("All") {
+              ForEach(nonFavoriteIdeas) {
+                AppIdeasListRow(idea: $0)
+              }
+            }
           }
         }
       }

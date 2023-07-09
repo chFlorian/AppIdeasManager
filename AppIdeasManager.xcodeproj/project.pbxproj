@@ -18,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5C74D0FF2A4851AC00C72A69 /* AppIdeasManager.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AppIdeasManager.entitlements; sourceTree = "<group>"; };
 		5C8043CB2A30D16200775148 /* AppIdeasManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppIdeasManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C8043CE2A30D16200775148 /* AppIdeasManagerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIdeasManagerApp.swift; sourceTree = "<group>"; };
 		5C8043D02A30D16200775148 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,6 +60,7 @@
 		5C8043CD2A30D16200775148 /* AppIdeasManager */ = {
 			isa = PBXGroup;
 			children = (
+				5C74D0FF2A4851AC00C72A69 /* AppIdeasManager.entitlements */,
 				5C8043CE2A30D16200775148 /* AppIdeasManagerApp.swift */,
 				5C8043D02A30D16200775148 /* ContentView.swift */,
 				5CAF7F7B2A3371F200F71A8A /* AppIdeasListRow.swift */,
@@ -285,6 +287,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AppIdeasManager/AppIdeasManager.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AppIdeasManager/Preview Content\"";
@@ -314,6 +317,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AppIdeasManager/AppIdeasManager.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AppIdeasManager/Preview Content\"";
